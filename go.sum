@@ -4,6 +4,8 @@ github.com/SINTEF-Infosec/demokit v0.0.0-20210830072225-9559660ea751 h1:St3FM4ce
 github.com/SINTEF-Infosec/demokit v0.0.0-20210830072225-9559660ea751/go.mod h1:OuuOQSt8iM/ZLFU2CCRWgJcNYPPP/XQiTuwqKlD+lk0=
 github.com/SINTEF-Infosec/demokit v0.0.0-20210830144757-be9633edefed h1:K0ucL/aChpY51ELbmL/uaEQib78Aej+487YNek3ZJFo=
 github.com/SINTEF-Infosec/demokit v0.0.0-20210830144757-be9633edefed/go.mod h1:OuuOQSt8iM/ZLFU2CCRWgJcNYPPP/XQiTuwqKlD+lk0=
+github.com/SINTEF-Infosec/demokit v0.0.0-20210831064410-01bd911b2220 h1:dfDo7W3tOzzgubnnv1+H9+ahQU6Ive+F2+ooWXW0K4c=
+github.com/SINTEF-Infosec/demokit v0.0.0-20210831064410-01bd911b2220/go.mod h1:OuuOQSt8iM/ZLFU2CCRWgJcNYPPP/XQiTuwqKlD+lk0=
 github.com/adrg/libvlc-go/v3 v3.1.4 h1:zWBln9eEuMzZbOFtgmvHpufYejAuelfmGpiWG9f0n24=
 github.com/adrg/libvlc-go/v3 v3.1.4/go.mod h1:xJK0YD8cyMDejnrTFQinStE6RYCV1nlfS8KmqTpszSc=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
