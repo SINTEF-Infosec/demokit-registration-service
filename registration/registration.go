@@ -21,11 +21,17 @@ func RegisterNode(server *RegistrationServer) gin.HandlerFunc {
 		server.mutex.Lock()
 		defer server.mutex.Unlock()
 
+		// checking that the client IP and the localIP are the same
+		clientIP := ctx.ClientIP()
+		if clientIP != nodeInfo.LocalIp {
+			log.Printf("warning: client IP and provided local IP are different!")
+		}
+
 		// Registering the info
 		// We still check if there is already a node with that name registered
 		for k, node := range server.nodes {
 			if node.NodeInfo.Name == nodeInfo.Name && node.NodeInfo.LocalIp != nodeInfo.LocalIp {
-				log.Printf("Warning: local ips differ but nodes' names are the same, %s (%s) / %s (%s)",
+				log.Printf("Warning: local IPs differ but nodes' names are the same, %s (%s) / %s (%s)",
 					node.NodeInfo.Name, node.NodeInfo.LocalIp,
 					nodeInfo.Name, nodeInfo.LocalIp)
 				server.nodes[k].NodeInfo = nodeInfo
