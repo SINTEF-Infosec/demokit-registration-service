@@ -10,6 +10,7 @@ import (
 	"net/http"
 	"sync"
 	"time"
+	"github.com/gin-contrib/cors"
 )
 
 const (
@@ -37,6 +38,9 @@ func NewRegistrationServer() *RegistrationServer {
 	}
 
 	rsRouter := gin.Default()
+	rsRouter.Use(cors.New(cors.Config{
+		AllowAllOrigins: true,
+	}))
 	rsRouter.GET("/nodes", ServeNodesInformation(server))
 	rsRouter.POST("/register", RegisterNode(server))
 
