@@ -1,4 +1,4 @@
-module demokit-registration-service
+module github.com/SINTEF-Infosec/demokit-registration-service
 
 go 1.16
 
